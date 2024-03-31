@@ -47,7 +47,7 @@ To optimize our data for analysis, we've created a new schema that organizes the
 - **DimEmployees**: Contains employee data, including organizational structure.
 - **DimOffices**: Lists information about sales offices.
 - **DimProducts**: Catalogs products sold by the retailer.
-
+  ![factorders](sql-images\creating-fact-table.png)
 
 
 ### Subdimension Tables
