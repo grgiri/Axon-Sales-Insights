@@ -47,7 +47,7 @@ To optimize our data for analysis, we've created a new schema that organizes the
 - **DimEmployees**: Contains employee data, including organizational structure.
 - **DimOffices**: Lists information about sales offices.
 - **DimProducts**: Catalogs products sold by the retailer.
-![fdimcustomer](sql-images\creating-dimension-table.png)
+
 
 
 ### Subdimension Tables
@@ -72,36 +72,36 @@ This project leverages Power BI and SQL to transform, model, and analyze Axon's 
 - **Transformations:** 
   - Merged name and address columns.
   - Cleaned phone number column.
-  ![phonenumedit](bi-images\phonenum-edit.png)
+  
   - Removed columns with null values in `productlines`.
   - Dropped the state column due to null values.
 
-  ![custstate](bi-images\cust-state.png)
+  
 
 ## Data Modeling
 
 Utilized the transformed data to establish a model showcasing the relationship between facts, dimensions, and sub-dimensions, including a Date table to enhance time-based analysis.
-![datamodel](bi-images\data-model.png)
+
 
 ## Visualization and Reporting
 
 Using PowerBI, we've developed a series of interactive dashboards and reports that leverage our newly structured data. These tools provide real-time insights into sales trends, employee performance, and customer behavior, among other key business metrics.
 
 1. **Sales Overview:** Revenue, profit over time, top customers and employees, and quarterly sales by territory.
-![sales](bi-images\sales-overview.png)
+
 2. **Order Overview:** Monthly average order value and order count, total orders with on-time delivery and quality issues, and a heatmap of orders.
-![orders](bi-images\order-overview.png)
+
 3. **Customer Overview:** Analysis of customer behavior and engagement.
-![customer](bi-images\customer-overview.png)
+
 4. **Product Overview:** Inventory levels, top-selling products, and vendor quality issues.
-![product](bi-images\product-overview.png)
+
 
 ### Key Performance Indicators (KPIs)
 
 - Year-over-year revenue and profit comparison.
-![saleskpi](bi-images\sales-kpi.png)
+
 - Insights on order volume, on-time delivery, quality issues, and average order value.
-![orderkpi](bi-images\order-kpi.png)
+
 
 ## Data Analysis Expressions (DAX)
 
