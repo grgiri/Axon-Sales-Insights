@@ -39,7 +39,7 @@ To optimize our data for analysis, we've created a new schema that organizes the
 ### Fact Table
 
 - **FactOrders**: Combines data from the `Orders` and `OrderDetails` tables to capture all transactional information.
-![factorders](sql-images\creating-fact-table.png)
+![factorders](sql-images/creating-fact-table.png)
 
 ### Dimension Tables
 
