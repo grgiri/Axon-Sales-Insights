@@ -58,13 +58,6 @@ To optimize our data for analysis, we've created a new schema that organizes the
 
 The restructuring into fact and dimension tables allows for more sophisticated analyses and easier report generation.
 
-
-# Axon Classic Cars Sales Analysis
-
-## Project Overview
-
-This project leverages Power BI and SQL to transform, model, and analyze Axon's classic car sales data. Our goal is to uncover actionable insights that can drive better decision-making and improve sales performance.
-
 ## Data Preparation
 
 ### Data Loading and Transformation
@@ -73,15 +66,19 @@ This project leverages Power BI and SQL to transform, model, and analyze Axon's 
 - **Transformations:** 
   - Merged name and address columns.
   - Cleaned phone number column.
-  
+
+  ![phonenum](bi-images/phonenum-edit.png)
   - Removed columns with null values in `productlines`.
   - Dropped the state column due to null values.
 
+  ![state](bi-images/cust-state.png)
   
 
 ## Data Modeling
 
 Utilized the transformed data to establish a model showcasing the relationship between facts, dimensions, and sub-dimensions, including a Date table to enhance time-based analysis.
+
+![datamodel](bi-images/data-model.png)
 
 
 ## Visualization and Reporting
@@ -90,27 +87,41 @@ Using PowerBI, we've developed a series of interactive dashboards and reports th
 
 1. **Sales Overview:** Revenue, profit over time, top customers and employees, and quarterly sales by territory.
 
+![salesl](bi-images/sales-overview.png)
+
 2. **Order Overview:** Monthly average order value and order count, total orders with on-time delivery and quality issues, and a heatmap of orders.
+
+![order](bi-images/order-overview.png)
 
 3. **Customer Overview:** Analysis of customer behavior and engagement.
 
+![customer](bi-images/customer-overview.png)
+
 4. **Product Overview:** Inventory levels, top-selling products, and vendor quality issues.
+
+![product](bi-images/product-overview.png)
 
 
 ### Key Performance Indicators (KPIs)
 
 - Year-over-year revenue and profit comparison.
 
+![kpi](bi-images/sales-kpi.png)
+
 - Insights on order volume, on-time delivery, quality issues, and average order value.
+
+![kpi](bi-images/order-kpi.png)
 
 
 ## Data Analysis Expressions (DAX)
 
 Included DAX formulas for average order amount, order segment, previous year's profit, and on-time delivery metrics.
+Images & '.pbix' files  are provided .
 
 ## Advanced Analytics in SQL
 
 Performed SQL queries to analyze inventory levels, customer payments, average order values by product line, and sales by country.
+Images and sql files are provided.
 
 ## Key Insights
 
@@ -133,4 +144,3 @@ This analysis provides Axon with a deep dive into sales trends, customer behavio
 This Power BI and SQL project was developed as a capstone project for the Data Science course offered by OdinSchool. It represents a culmination of the skills and knowledge acquired throughout the course. The project focuses on addressing real-world business challenges faced by Axon, a classic car retailer, using data-driven analysis and business intelligence solutions.
 
 The SQL database utilized for this project, containing comprehensive sales data, was provided by OdinSchool. This setup allowed for an authentic data analysis experience, simulating real-world conditions and constraints.
-
